@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Siddhu Fitness</title>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+	/*CSS Reset*/
+	body {
+		color: white;
+		margin: 0px;
+		padding: 0px;
+		background: url('img/fitness.PNG');
+		font-family: "Sofia", sans-serif;
+		font-size: 12px;
+		/*height: 3444px;*/
+		width: auto;
+	}
+
+	.left {
+		/*color: white;*/
+		display: inline-block;
+		/*border: 2px solid red;*/
+		position: absolute;
+		left: 35px;
+		top: 20px;
+	}
+
+	.mid {
+		/*color:white;*/
+		display: block;
+		width: 45%;
+		margin: 20px auto;
+		/*border: 2px solid green;*/
+	}
+
+	.right {
+		/*color: white;*/
+		position: absolute;
+		right: 34px;
+		top: 20px;
+		display: inline-block;
+		/*border: 2px solid yellow;*/
+	}
+
+	.navbar {
+		display: inline-block;
+	}
+
+	.navbar li {
+		display: inline-block;
+		font-size: 18px;
+	}
+
+	.navbar li a {
+		/*display: inline-block;*/
+		color: white;
+		text-decoration: none;
+		padding: 34px 23px;
+	}
+
+	.navbar li a:hover,
+	.navbar li a.active {
+		text-decoration: underline;
+		color: skyblue;
+		/*display: inline-block;
+		color: white;
+		text-decoration: none;
+		padding: 34px 23px;*/
+	}
+
+	.left img {
+		width: 122px;
+		line-height: 19px;
+
+	}
+
+	.left div {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.btn {
+		margin: 0px 4px;
+		background-color: rgb(235, 157, 31);
+		color: rgb(93, 93, 204);
+		padding: 3px 14px;
+		border: 2px solid gold;
+		border-radius: 8px;
+		font-size: 18px;
+		cursor: pointer;
+		font-family: "Sofia", sans-serif;
+	}
+
+	.btn:hover {
+		background-color: skyblue;
+	}
+
+	.container {
+		/*border: 2px solid white;*/
+		margin: 75px 75px;
+		padding: 60px 60px;
+		width: 33%;
+		border-radius: 6px;
+		font-size: 16px;
+	}
+
+	.form-group input {
+		text-align: center;
+		display: block;
+		width: 300px;
+		padding: 10px 3px;
+		border: 2px solid pink;
+		margin: 3px auto;
+		font-size: 18px;
+		border-radius: 8px;
+		font-family: "Sofia", sans-serif;
+	}
+	.container h2{
+   text-align: center;
+	}
+	.container button{
+		display: block;
+		width: 300px;
+		margin: 20px auto;
+	}
+</style>
+
+<body>
+	<header class="hearder">
+		<!--Left box for logo-->
+		<div class="left">
+			<img src="img/gym.png.jpg" alt="">
+			<div>
+				Siddhu's Fitness
+			</div>
+		</div>
+		<!--Left box for navbar(navigation)-->
+		<div class="mid">
+			<ul class="navbar">
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Fitness Calculator</a> </li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</div>
+		<!--Right box for buttons-->
+		<div class="right">
+			<button class="btn">Call us now</button><button class="btn">Email us</button>
+		</div>
+	</header>
+	<div class="container">
+		<h2>Join the Best Gym of Delhi now</h2>
+		<form action="noaction.php">
+			<div class="form-group">
+				<input type="text" name="" placeholder="Enter your Name">
+			</div>
+			<div class="form-group">
+				<input type="text" name="" placeholder="Enter your Age">
+			</div>
+			<div class="form-group">
+				<input type="text" name="" placeholder="Enter your Gender">
+			</div>
+			<div class="form-group">
+				<input type="text" name="" placeholder="Enter your Locality">
+			</div>
+			<button class="btn">Submit Now</button>
+		</form>
+	</div>
+
+</body>
+
+</html>
