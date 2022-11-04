@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Key Frames and Animations</title>
+</head>
+<style>
+	.container {
+		background-color: yellow;
+	}
+
+	.box {
+		background-color: green;
+		width: 250px;
+		height: 250px;
+		position: relative;
+		/*animation-name: siddhu12;*/
+		animation-name: Lucky1;
+		animation-duration: 8s;
+		animation-iteration-count: infinite;
+		animation-fill-mode: alternate;
+		/*animation-timing-function: ease-in-out;*/
+		/*animation-delay: 4s;*/
+		/*animation-direction: alternate-reverse;*/
+		/*animation: animation-name animation-duration animation-timig-function animation-delay animation-iteration-count ainimation-fill-mode;*/
+		animation: Lucky1 8s ease-in 4s infinite alternate;
+	}
+
+	@keyframes Lucky1 {
+		0% {
+			top: 0px;
+			left: 0px;
+		}
+
+		25% {
+			top: 250px;
+			left: 0px;
+		}
+
+		75% {
+			top: 250px;
+			left: 250px;
+		}
+
+		100% {
+			top: 0px;
+			left: 250px;
+		}
+
+	}
+
+	@keyframes siddhu12 {
+		from {
+			width: 200px;
+		}
+
+		to {
+			width: 400px;
+		}
+
+
+	}
+</style>
+
+<body>
+	<div class="container">
+		<div class="box">
+			This is box
+		</div>
+	</div>
+</body>
+
+</html>
