@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Before and After pseudo selectors</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		color: white;
+		background-color: black;
+		background: url('https://images.unsplash.com/photo-1667429135701-0df2b16de1b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
+	}
+
+	/*header::before {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		opacity: 2;
+	}*/
+
+
+	.navigation {
+		font-size: 15px;
+		display: flex;
+		font-family: 'Ubuntu', sans-serif;
+	}
+
+	li {
+		list-style: none;
+		padding: 20px 23px;
+	}
+
+	section {
+		height: 344px;
+		font-family: 'Ubuntu', sans-serif;
+		margin: 3px 23px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/*border: 2px solid red;*/
+		justify-content: center;
+	}
+
+	/*section::before {
+		content: "This is the content";
+	}*/
+
+	p {
+		text-align: center;
+	}
+</style>
+
+<body>
+	<header>
+		<nav clas="navbar">
+			<ul class="navigation">
+				<li class="item">Home</li>
+				<li class="item">About</li>
+				<li class="item">Service</li>
+				<li class="item">Contact us</li>
+
+			</ul>
+
+		</nav>
+	</header>
+	<section>
+		<h1> Welcome to coding world</h1>
+		<p>This guide is designed to get you quickly started writing code and bringing your creative ideas to life.
+			Although programming can be a lifelong pursuit, all programs are built around a few core principles:</p>
+	</section>
+	
+</body>
+
+</html>
