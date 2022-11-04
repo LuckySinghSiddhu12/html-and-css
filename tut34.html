@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bos shadow and Text shadow</title>
+</head>
+<style>
+	.container {
+		display: flex;
+	}
+
+	.card {
+		padding: 23px 34px;
+		margin: 23px 12px;
+		/*border: 2px solid red;*/
+		background-color: aqua;
+		/*box-shadow: offset-x offset-y color;
+		/*box-shadow: offset-x offset-y blur-radius color;
+		/*box-shadow: offset-x offset-y blur-radius spread-radius color;*/
+		/*box-shadow: 10px 10px gold; for below box shadow is use positive value*/
+
+		/*box-shadow: -10px -10px green;/* for above box shadow is use negative value*/
+		/*box-shadow: 6px 6px 10px green;/*  for blur radius is 3rd value loke 10px for below*/
+		/*box-shadow: -6px -6px 10px 9px rgba(50, 194, 194, 0.5);/*  for blur radius is 3rd value loke 10px for above and 9px is used for spar radius (agar humhe all side me shadow bhadha na h)  */
+		box-shadow: inset 3px 4px green;
+		box-shadow: 10px 12px purple, 9px 8px gold;
+
+	}
+	.card h2{
+		/*text-shadow: 2px 3px pink;*/
+		text-shadow: 4px 3px 2px  pink;/*2px is blur*/
+	}
+</style>
+
+<body>
+	<div class="container">
+
+		<div class="card" id="card-1">
+			<h2>This is Web Development course</h2>
+			<p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network). Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+		</div>
+		<div class="card" id="card-2">
+			<h2>This is Data science course</h2>
+			<p>A data scientist's duties can include developing strategies for analyzing data, preparing data for analysis, exploring, analyzing, and visualizing data, building models with data using programming languages, such as Python and R, and deploying models into applications. The data scientist doesn't work solo.</p>
+		</div>
+		<div class="card" id="card-3">
+			<h2>This is Artifical Intelligence course</h2>
+			<p>In the simplest terms, AI which stands for artificial intelligence refers to systems or machines that mimic human intelligence to perform tasks and can iteratively improve themselves based on the information they collect. AI manifests in a number of forms.</p>
+		</div>
+
+	</div>
+</body>
+
+</html>
