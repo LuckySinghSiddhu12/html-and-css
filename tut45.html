@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid with media queries</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar' 
+        'section section section aside'
+        'footer footer footer footer ';
+    }
+        
+  
+@media only screen and (max-width:200px) {
+    body {
+        background-color: red;
+    }
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar' 
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer ';
+    }
+    
+
+    section{
+        grid-area: section;
+
+    }
+
+    aside {
+        grid-area: aside;
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+  
+    
+}
+@media only screen and (min-width: 200px) and (max-width:500px) {
+    body {
+        background-color: blue;
+    }
+    .container{
+        grid-template-areas: 
+        'navbar navbar navbar navbar' 
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer ';
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+
+}
+@media (min-width: 500px) and (max-width:700px) {
+    body {
+        background-color: yellow;
+    }
+    .container{
+        grid-template-areas: 
+        'navbar navbar navbar navbar' 
+        'section section section section'
+        'aside aside aside aside'
+        'footer footer footer footer ';
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+}
+@media (min-width: 700px) {
+    body {
+        background-color: green;
+    }
+}
+.sidhu{
+    border: 2px solid orangered;
+    background-color: skyblue;
+    padding: 20px;
+}
+nav {
+        grid-area: navbar;
+    }
+
+    section{
+        grid-area: section;
+
+    }
+
+    aside {
+        grid-area: aside;
+    }
+   
+    footer{
+        grid-area: footer;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="container ">
+        <nav class="sidhu">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span> 
+        </nav>
+        <section class="sidhu">
+            <h2>Learn Web design</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque nemo cupiditate distinctio et Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam corrupti veniam a nam! Blanditiis ad ea, ut amet quia, iste culpa autem numquam aperiam molestiae voluptatum veniam dolor quas reiciendis officia voluptatem tempore sapiente facilis repudiandae dolore! Libero.</p>
+        </section>
+        <aside class="sidhu">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+    <footer class="sidhu">Copyright CodeWithSidhu 2022</footer>
+    </div>
+</body>
+</html>
